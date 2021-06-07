@@ -20,44 +20,31 @@ function buttonColorChange(buttonThingy) {
 
 function buttonsRed() {
 	for (let i = 0; i < all_buttons.length; i++) {
-		all_buttons[i].classList.remove(
-			all_buttons[i].classList[1]
-		);
+		all_buttons[i].classList.remove(all_buttons[i].classList[1]);
 		all_buttons[i].classList.add('btn-danger');
 	}
 }
 
 function buttonsGreen() {
 	for (let i = 0; i < all_buttons.length; i++) {
-		all_buttons[i].classList.remove(
-			all_buttons[i].classList[1]
-		);
+		all_buttons[i].classList.remove(all_buttons[i].classList[1]);
 		all_buttons[i].classList.add('btn-success');
 	}
 }
 
 function buttonColorReset() {
 	for (let i = 0; i < all_buttons.length; i++) {
-		all_buttons[i].classList.remove(
-			all_buttons[i].classList[1]
-		);
+		all_buttons[i].classList.remove(all_buttons[i].classList[1]);
 		all_buttons[i].classList.add(copyAllButtons[i]);
 	}
 }
 
 function randomColors() {
-	var choices = [
-		'btn-primary',
-		'btn-danger',
-		'btn-warning',
-		'btn-success',
-	];
+	var choices = ['btn-primary', 'btn-danger', 'btn-warning', 'btn-success'];
 
 	for (let i = 0; i < all_buttons.length; i++) {
 		var randomNumber = Math.floor(Math.random() * 4);
-		all_buttons[i].classList.remove(
-			all_buttons[i].classList[1]
-		);
+		all_buttons[i].classList.remove(all_buttons[i].classList[1]);
 		all_buttons[i].classList.add(choices[randomNumber]);
 	}
 }
